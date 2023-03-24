@@ -30,7 +30,7 @@ helloWorld()
 
 
 const jsNinja = () => "i am a java ninja"
-
+console.log(jsNinja())
  
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -44,8 +44,8 @@ function printName (name){
   console.log(name)
 }
 
-printName("cameron ")
-printName("jake")
+printName("cameron")
+
 ////////////////// PROBLEM 4 ////////////////////
 /*
   Create a function called greeting that
@@ -58,6 +58,11 @@ printName("jake")
 
 //CODE HERE
 
+function greeting (name){
+  console.log("hello, " + name)
+}
+
+greeting("craig")
 ////////////////// PROBLEM 5 ////////////////////
 
 /*
@@ -71,6 +76,15 @@ printName("jake")
 
 //CODE HERE
 
+const compareNums = (num1 , num2) => {
+  if (num1 > num2){
+    return num1
+  }
+  else return num2
+}
+
+console.log (compareNums(6, 15))
+
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -81,7 +95,13 @@ printName("jake")
 */
 
 //CODE HERE
+let sum = add 
+function add (num1, num2){
+  return  num1 + num2
 
+}
+
+console.log(add(15, 20))
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -96,7 +116,7 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 
 
@@ -111,7 +131,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
