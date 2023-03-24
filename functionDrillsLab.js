@@ -142,6 +142,10 @@ console.log('arrow')
   Brownie points if you use a template string
 */
 
+const exclaimThree = str => `${str.toUpperCase()} !!!`;
+
+console.log(exclaimThree('WEEEE'));
+
 
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -156,7 +160,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -170,6 +174,19 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+let nameGreeting = nameCheck
+
+
+function nameCheck(name){
+  if (name === 'steven'){
+    return "what is up steven"
+  }
+  else if (name === 'bryan'){
+    return "hey bryan"
+  } else "cool name " + name
+}
+
+console.log(nameGreeting("steven"))
 
 
 ////////////////// PROBLEM 11 ////////////////////
@@ -195,6 +212,14 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
+function printAllNames(arr){
+  for(let i = 0; i < arr.length; i++){
+    console.log(" my name is: " + arr[i]);
+  }
+}
+
+printAllNames(namesArr);
+
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -205,6 +230,18 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+
+function thatsOdd(x){
+  if(x % 2 === 0){
+    console.log("That's not odd!")
+  } else {
+    console.log("This is odd indeed!")
+  }
+}
+
+let oddChecker = thatsOdd(3);
+
+console.log(oddChecker);
 
 
 ////////////////// PROBLEM 14 ////////////////////
@@ -218,6 +255,10 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+
+const bestMovie = (movie) => movie + ' is the best movie ever!';
+
+console.log(bestMovie('Top Gun'));
 
 
 ////////////////// PROBLEM 15 ////////////////////
@@ -233,6 +274,22 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 
 //CODE HERE
 
+function bigOrSmall(arr){
+  let answers = []
+  for( let i = 0; i<= arr.length; i++){
+    if (arr[i] > 100){
+      answers.push("big");
+    } else if (arr[i] <= 100){
+      answers.push('small')
+    } else {
+      continue;
+    }
+  }
+  return answers;
+}
+let arrayEvaluator = bigOrSmall(bigOrSmallArray)
+console.log(arrayEvaluator)
+
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
@@ -243,7 +300,19 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
+function theEliminator(x,arr){
+  let winners = []
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] === x){
+      arr.splice(arr[i], 1)
+    } else {
+      winners.push(arr[i])
+    }
+  }
+  return winners;
+}
 
+console.log(theEliminator(loser,contestants));
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -253,6 +322,12 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+
+function upCase(str){
+  console.log(str.toUpperCase())
+};
+
+console.log(upCase(sampleString));
 
 
 ////////////////// PROBLEM 18 ////////////////////
